@@ -1,0 +1,45 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+    "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+    <title>Panel Toggler</title>
+    <meta name="author" content="Erwin Jove Gargalicano" />
+    <link media='screen' type='text/css' rel="stylesheet" href="css/style.css" />
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.paneltoggler.js"></script>
+    <script type="text/javascript">
+    
+        //Panel Toggler Initializaion
+        $(document).ready(function(){
+            $('#toggler-container').panelToggler();
+        });
+        
+    </script>
+</head>
+<body>
+    <div id="container">
+        <div id="toggler-container">
+            <div class="container-inner">
+                <div class="container-aligner">
+                    <div id="toggler-header">
+                        <h4>Click to toggle</h4>
+                        <a href="#" class="toggler-icon"><span>Toggle Icon</span></a>
+                    </div>
+                    <div id="toggler-content-holder">
+                        <div class="container-aligner">
+                            <ul id="list">
+                                <li><a href="#">Content 1</a></li>
+                                <li><a href="#">Content 2</a></li>
+                                <li><a href="#">Content 3</a></li>
+                                <li><a href="#">Content 4</a></li>
+                                <li><a href="#">Content 5</a></li>
+                                <li><a href="#">Content 6</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
